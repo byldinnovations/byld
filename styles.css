@@ -1,0 +1,198 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  background: url(images/render2.jpeg) no-repeat, linear-gradient(#6b6b6b, #707070, #6f6f6f);
+  background-size: 1200px;
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+  background-position: left top;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.tag {
+  text-decoration: none;
+  color: #18272F;
+  font-weight: 700;
+  position: relative;
+}
+
+.tag::before {
+  content: '';
+  background-color: #3CCF4E 75%;
+  position: absolute;
+  left: 12.5%;
+  bottom: 3px;
+  width: 75%;
+  height: 0;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.tag:hover::before {
+  bottom: 0;
+  height: 100%;
+}
+
+.tag2 {
+  background-image: linear-gradient(to right,
+      #3CCF4E,
+      #3CCF4E 50%,
+      #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.tag2:before {
+  content: '';
+  background: #3CCF4E;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.tag2:hover {
+  background-position: 0;
+}
+
+.tag2:hover::before {
+  width: 100%;
+}
+
+hr {
+  border-style: solid none none;
+  color: #3CCF4E;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#home {
+  font-weight: bold;
+}
+
+#home:hover {
+  background: white;
+}
+
+/* Navbar */
+
+#brandName {
+  margin-left: 50px !important;
+  margin-right: 50px !important;
+}
+
+.dropdown-menu {
+  width: 700px !important;
+  height: 275px !important;
+}
+
+.droptext {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dropimage {
+  padding: 35px 0;
+}
+
+#portaprinter-img {
+  margin-top: 15px;
+  width: 300px;
+  height: 200px;
+}
+
+/* Landing Text */
+
+.landing-text {
+  height: 630px;
+}
+
+#future {
+  position: relative;
+  top: 20%;
+  left: 65%;
+  color: white;
+  font-size: 75px;
+  /* padding-bottom: 250px; */
+  display: inline;
+}
+
+/* Problem and Solution */
+
+.prob-sol {
+  height: 715px;
+  background-color: white;
+  padding: 50px;
+}
+
+.box {
+  margin: auto;
+}
+
+/* Portaprinter Page  */
+
+.animation {
+  height: 625px;
+  /* margin-top: 7.5%; */
+  background: url(images/PortaPrinterAnimationvideo.gif) no-repeat;
+  background-size: 1500px;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#product-title {
+  text-align: center;
+  text-shadow: #6b6b6b;
+  font-weight: 900;
+  font-size: 45px;
+}
+
+#gif {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.description {
+  height: 625px;
+  margin: 50px;
+}
+
+.product {
+  text-align: right;
+  color: #000;
+}
+
+.product-left {
+  text-align: left;
+  color: #000;
+}
+
+.description-text {
+  text-transform: none;
+  font-weight: 800;
+}
+
+/* About Page */
+
+.statements {
+  margin-top: 20px;
+  font-weight: 1000;
+}
