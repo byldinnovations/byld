@@ -3,7 +3,7 @@ body {
   /* font-size: 100; */
   text-transform: uppercase;
   background: url(images/render2.jpeg) no-repeat, linear-gradient(#6b6b6b, #707070, #6f6f6f);
-  background-size: 1200px;
+  background-size: 80vw;
   /* background-repeat: no-repeat; */
   background-attachment: fixed;
   background-position: left top;
@@ -179,7 +179,8 @@ hr {
 /* Landing Text */
 
 .landing-text {
-  height: 630px;
+  height: 30vw;
+  margin-bottom: 7vw;
 }
 
 #future {
@@ -187,8 +188,7 @@ hr {
   top: 20%;
   left: 65%;
   color: white;
-  font-size: 75px;
-  /* padding-bottom: 250px; */
+  font-size: 5vw;
   display: inline;
 }
 
