@@ -17,7 +17,7 @@ template.innerHTML = `
                         Products
                     </a>
                     <div class="dropdown-menu" data-bs-toggle="dropdown" data-bs-target=".navbar-collapse.show">
-                        <a href="PortaPrinter.html" class="porta-tag">
+                        <a href="Portaprinter.html" class="porta-tag">
                             <span class="red">porta</span><span class="blue">Printer</span>
                         </a>
                         <a href="PortaConnect.html" class="porta-tag">
