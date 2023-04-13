@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  /* font-size: 100; */
   text-transform: uppercase;
   background: url(images/render2.jpeg) no-repeat, linear-gradient(#6b6b6b, #707070, #6f6f6f);
   background-size: 1200px;
@@ -15,15 +16,24 @@ a {
 }
 
 .tag {
-  text-decoration: none;
-  color: #18272F;
-  font-weight: 700;
+  background-image: linear-gradient(to right,
+    #EE3824,
+    #EE3824 50%,
+    #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
   position: relative;
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 .tag::before {
   content: '';
-  background-color: #3CCF4E 75%;
+  background-color: white 75%;
   position: absolute;
   left: 12.5%;
   bottom: 3px;
@@ -34,28 +44,44 @@ a {
 }
 
 .tag:hover::before {
-  bottom: 0;
-  height: 100%;
+  content: '';
+  background: white;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.tag:hover {
+  background-position: 0;
+}
+
+.tag:hover::before {
+  width: 100%;
 }
 
 .tag2 {
   background-image: linear-gradient(to right,
-      #3CCF4E,
-      #3CCF4E 50%,
-      #000 50%);
+    #EE3824,
+    #EE3824 50%,
+    #000 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
   padding: 5px 0;
   position: relative;
   -webkit-background-clip: text;
+  background-clip: none;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
 
 .tag2:before {
   content: '';
-  background: #3CCF4E;
+  background: #DB2221;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -75,13 +101,14 @@ a {
 
 hr {
   border-style: solid none none;
-  color: #3CCF4E;
+  color: #0B2B37 50%;
   width: 75%;
   margin: 0 auto;
 }
 
 #home {
-  font-weight: bold;
+  font-weight: 700;
+
 }
 
 #home:hover {
@@ -90,14 +117,26 @@ hr {
 
 /* Navbar */
 
+#navbar-nav {
+  width: 50%;
+}
+
 #brandName {
   margin-left: 50px !important;
   margin-right: 50px !important;
 }
 
+.dropdown-hover:hover .dropdown-menu {
+  display: block;
+  width: 150px !important;
+  height: 80px !important;
+  background: white;
+  border: none;
+}
 .dropdown-menu {
-  width: 700px !important;
-  height: 275px !important;
+  display: none;
+  position: absolute;
+  z-index: 1000;
 }
 
 .droptext {
@@ -106,13 +145,35 @@ hr {
 }
 
 .dropimage {
-  padding: 35px 0;
+  /* padding: 35px 0; */
+  height: 125px;
 }
 
-#portaprinter-img {
-  margin-top: 15px;
-  width: 300px;
-  height: 200px;
+.porta-img {
+  width: 200px;
+}
+
+.porta-tag {
+  text-transform: none;
+  display: block;
+  margin: 2% 5%;
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+.red {
+  color: #EE3824;
+}
+
+.blue {
+  color: #0B2B37;
+}
+
+.mbold {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: bold;
+  font-size: large;
 }
 
 /* Landing Text */
@@ -159,9 +220,12 @@ hr {
 
 #product-title {
   text-align: center;
-  text-shadow: #6b6b6b;
+  text-shadow: #0B2B37;
   font-weight: 900;
   font-size: 45px;
+  background-color: rgba(245, 245, 245, 0.662);
+  transition: opacity 1s ease-in-out; /* added transition */
+  opacity: 1; /* set initial opacity */
 }
 
 #gif {
@@ -190,9 +254,50 @@ hr {
   font-weight: 800;
 }
 
-/* About Page */
+/* Out Story Page */
+
+
 
 .statements {
   margin-top: 20px;
   font-weight: 1000;
+}
+
+.mega-slider {
+  padding: 6% 0;
+}
+
+.carousel {
+  padding: 0;
+}
+
+.slider {
+  margin-left: auto;
+  margin-right: auto;
+  width: 97.5%;
+}
+
+/* PortaConnect Page */
+
+.porta-connect-keyword {
+  font-size: larger;
+  font-weight: 700;
+  color: #0B2B37;
+}
+
+/* Footer */
+
+.footer {
+  text-align: right;
+  text-transform: none;
+  font-weight: 700;
+  padding-top: 2%;
+}
+
+#Ishaan {
+  color: #EE3824;
+}
+
+#Ishaan:hover {
+  color: #0B2B37;
 }
