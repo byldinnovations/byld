@@ -4,11 +4,27 @@ body {
   text-transform: uppercase;
   background: url(images/render2.jpeg) no-repeat, linear-gradient(#6b6b6b, #707070, #6f6f6f);
   background-size: 80vw;
-  /* background-repeat: no-repeat; */
   background-attachment: fixed;
   background-position: left top;
   position: relative;
 }
+
+@media screen and (max-width: 700px) {
+  body {
+    background-size: 100vw;
+    background-position: center center;
+
+  }
+}
+
+/* @media screen and (min_width: 701px) {
+  body {
+    background-size: 80vw;
+    background-attachment: fixed;
+    background-position: left top;
+    position: relative;
+  }
+} */
 
 a {
   text-decoration: none;
@@ -180,7 +196,7 @@ hr {
 
 .landing-text {
   height: 30vw;
-  margin-bottom: 6.4vw;
+  margin-bottom: 6.4pvw;
 }
 
 #future {
