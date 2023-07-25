@@ -10,23 +10,15 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   body {
-    /* background-size: 100vw;
-    background-position: center center; */
-    background: url(images/karan\ holding\ product.jpg);
-    background-size: 100vh;
+    /* background-size: 100vw; */
+    background-position: center center; 
+    background: url(images/tile.png) repeat, #0B2B37;
+    background-size: 20vw;
+    /* font-size: 3em; */
   }
 }
-
-/* @media screen and (min_width: 701px) {
-  body {
-    background-size: 80vw;
-    background-attachment: fixed;
-    background-position: left top;
-    position: relative;
-  }
-} */
 
 a {
   text-decoration: none;
@@ -126,7 +118,7 @@ hr {
 
 #home {
   font-weight: 700;
-
+  background: rgba(242, 242, 242, 0.5);
 }
 
 #home:hover {
@@ -198,7 +190,7 @@ hr {
 
 .landing-text {
   height: 30vw;
-  margin-bottom: 6.4pvw;
+  margin-bottom: 6.4vw;
 }
 
 #future {
@@ -208,6 +200,15 @@ hr {
   color: white;
   font-size: 5vw;
   display: inline;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+  #future {
+    font-size: 15vw;
+    left: 5%;
+  }
 }
 
 /* Problem and Solution */
@@ -310,6 +311,7 @@ hr {
   text-transform: none;
   font-weight: 700;
   padding-top: 2%;
+  color: #EE3824;
 }
 
 #Ishaan {

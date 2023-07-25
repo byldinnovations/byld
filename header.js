@@ -18,10 +18,10 @@ template.innerHTML = `
                     </a>
                     <div class="dropdown-menu" data-bs-toggle="dropdown" data-bs-target=".navbar-collapse.show">
                         <a href="Portaprinter.html" class="porta-tag">
-                            <span class="red">porta</span><span class="blue">Printer</span>
+                            <span class="red">porta</span><span class="blue"> Printer</span>
                         </a>
                         <a href="PortaConnect.html" class="porta-tag">
-                            <span class="red">porta</span><span class="blue">Connect</span>
+                            <span class="red">porta</span><span class="blue"> Connect</span>
                         </a>
                     </div>
                     </li>
@@ -91,8 +91,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Get the p tag by ID
   var productTitle = document.getElementById("product-title");
 
-  setTimeout(function() {
-    productTitle.style.opacity = "0";
-  }, 3000);
-
+  if (productTitle != null) {
+    setTimeout(function() {
+      productTitle.style.opacity = "0";
+    }, 3000);
+  }   
 });
