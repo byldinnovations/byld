@@ -10,15 +10,15 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
   body {
-    /* background-size: 100vw; */
+    background-size: 100vw;
     background-position: center center; 
     background: url(images/tile.png) repeat, #0B2B37;
     background-size: 20vw;
-    /* font-size: 3em; */
+    font-size: 3em;
   }
-}
+} */
 
 a {
   text-decoration: none;
@@ -138,8 +138,8 @@ hr {
 
 .dropdown-hover:hover .dropdown-menu {
   display: block;
-  width: 150px !important;
-  height: 80px !important;
+  width: 150px;
+  height: 80px;
   background: white;
   border: none;
 }
@@ -189,8 +189,8 @@ hr {
 /* Landing Text */
 
 .landing-text {
-  height: 30vw;
-  margin-bottom: 6.4vw;
+  height: 75vh;
+  /* margin-bottom: 6.4vw; */
 }
 
 #future {
@@ -206,8 +206,13 @@ hr {
 
 @media screen and (max-width: 1000px) {
   #future {
-    font-size: 15vw;
-    left: 5%;
+    font-size: 10vw;
+    top: 30vh;
+    left: 25%;
+  }
+  .landing-text {
+    height: 90vh;
+    /* margin-bottom: 10vh; */
   }
 }
 
@@ -320,4 +325,17 @@ hr {
 
 #Ishaan:hover {
   color: #0B2B37;
+}
+
+@media screen and (max-width: 991px) {
+  .navContain {
+    font-size: 50px;
+  }
+  .porta-tag {
+    font-size: 35px;
+  }
+  .dropdown-hover:hover .dropdown-menu {
+    width: 90vw;
+    height: 160px;
+  }
 }
